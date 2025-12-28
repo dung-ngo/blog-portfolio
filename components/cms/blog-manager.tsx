@@ -10,10 +10,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Switch } from "@/components/ui/switch"
-import { Pencil, Trash2, Plus } from "lucide-react"
+import { Pencil, Trash2, Plus, FolderOpen } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 import { format } from "date-fns"
 import { RichTextEditor } from "@/components/rich-text-editor"
+import { CategoryManager } from "@/components/cms/category-manager"
 
 type BlogPost = {
   id: string
@@ -27,11 +28,20 @@ type BlogPost = {
   created_at: string
 }
 
+type Category = {
+  id: string
+  name: string
+  slug: string
+  color: string
+}
+
 export function BlogManager() {
   const [posts, setPosts] = useState<BlogPost[]>([])
   const [loading, setLoading] = useState(true)
   const [editingPost, setEditingPost] = useState<BlogPost | null>(null)
   const [dialogOpen, setDialogOpen] = useState(false)
+  const [categoryModalOpen, setCategoryModalOpen] = useState(false)
+  const [categories, setCategories] = useState<Category[]>([])
   const { toast } = useToast()
   const supabase = createClient()
 
@@ -46,8 +56,19 @@ export function BlogManager() {
     setLoading(false)
   }
 
+  const fetchCategories = async () => {
+    const { data, error } = await supabase.from("categories").select("*").order("created_at", { ascending: true })
+
+    if (error) {
+      toast({ title: "Error", description: error.message, variant: "destructive" })
+    } else {
+      setCategories(data || [])
+    }
+  }
+
   useEffect(() => {
     fetchPosts()
+    fetchCategories()
   }, [])
 
   const generateSlug = (title: string) => {
@@ -59,13 +80,15 @@ export function BlogManager() {
 
   const handleSave = async (formData: FormData) => {
     const title = formData.get("title") as string
+    const categorySlug = formData.get("category") as string
+    const selectedCategory = categories.find((cat) => cat.slug === categorySlug)
     const post = {
       title,
       slug: (formData.get("slug") as string) || generateSlug(title),
       excerpt: formData.get("excerpt") as string,
       content: formData.get("content") as string,
-      category: formData.get("category") as string,
-      category_color: formData.get("category_color") as string,
+      category: categorySlug || "unassigned",
+      category_color: selectedCategory?.color || "#6b7280",
       published: formData.get("published") === "on",
     }
 
@@ -103,7 +126,11 @@ export function BlogManager() {
 
   return (
     <div className="space-y-4">
-      <div className="flex justify-end">
+      <div className="flex justify-end gap-2">
+        <Button variant="outline" onClick={() => setCategoryModalOpen(true)}>
+          <FolderOpen className="h-4 w-4 mr-2" />
+          Manage Categories
+        </Button>
         <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
           <DialogTrigger asChild>
             <Button onClick={() => setEditingPost(null)}>
@@ -131,42 +158,23 @@ export function BlogManager() {
                 <Label htmlFor="slug">Slug (auto-generated if empty)</Label>
                 <Input id="slug" name="slug" defaultValue={editingPost?.slug} />
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <Label htmlFor="category">Category</Label>
-                  <Select name="category" defaultValue={editingPost?.category}>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select category" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="animal-welfare">Animal Welfare</SelectItem>
-                      <SelectItem value="ai-related">AI Related</SelectItem>
-                      <SelectItem value="career-guidance">Career Guidance</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-                <div>
-                  <Label htmlFor="category_color">Category Color</Label>
-                  <div className="flex gap-2">
-                    <Input
-                      id="category_color"
-                      name="category_color"
-                      type="color"
-                      defaultValue={editingPost?.category_color || "#fbbf24"}
-                      className="w-20 h-10 p-1 cursor-pointer"
-                    />
-                    <Input
-                      type="text"
-                      defaultValue={editingPost?.category_color || "#fbbf24"}
-                      onChange={(e) => {
-                        const colorInput = document.getElementById("category_color") as HTMLInputElement
-                        if (colorInput) colorInput.value = e.target.value
-                      }}
-                      placeholder="#fbbf24"
-                      className="flex-1"
-                    />
-                  </div>
-                </div>
+              <div>
+                <Label htmlFor="category">Category</Label>
+                <Select name="category" defaultValue={editingPost?.category || "unassigned"}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select category" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {categories.map((cat) => (
+                      <SelectItem key={cat.id} value={cat.slug}>
+                        <div className="flex items-center gap-2">
+                          <div className="w-3 h-3 rounded" style={{ backgroundColor: cat.color }} />
+                          {cat.name}
+                        </div>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
               <div>
                 <Label htmlFor="excerpt">Excerpt</Label>
@@ -190,6 +198,12 @@ export function BlogManager() {
           </DialogContent>
         </Dialog>
       </div>
+
+      <CategoryManager
+        open={categoryModalOpen}
+        onOpenChange={setCategoryModalOpen}
+        onCategoriesChange={fetchCategories}
+      />
 
       <Table>
         <TableHeader>
