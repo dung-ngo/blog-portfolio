@@ -1,6 +1,6 @@
-[00:00:02.004] Server  LOG      ✓ Ready in 1514ms
-[00:00:05.259] Server  LOG      ○ Compiling / ...
-[00:00:11.194] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:03.434] Server  LOG      ✓ Ready in 2.6s
+[00:04:11.359] Server  LOG      ○ Compiling / ...
+[00:04:16.571] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -21,14 +21,7 @@ It can also happen if the client has a browser extension installed which messes 
             <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{lazyData:null, ...}}>
-                    <__next_viewport_boundary__>
-                    <Next.Metadata>
-                      <div
-                        hidden={true}
--                       bis_skin_checked="1"
-                      >
-                    ...
+                  <Head>
                   <__next_root_layout_boundary__>
                     <SegmentViewNode type="layout" pagePath="layout.tsx">
                       <SegmentTrieNode>
@@ -38,13 +31,14 @@ It can also happen if the client has a browser extension installed which messes 
                       <script>
                       <RootLayout>
                         <html lang="en" suppressHydrationWarning={true}>
+                          <head>
                           <body
                             className="font-sans antialiased"
--                           __processed_1588edcc-d1b5-48f9-9a21-c53c9323dbf6__="true"
+-                           __processed_b34d0c00-619f-40af-b6e4-2f7cacb28437__="true"
+-                           cz-shortcut-listen="true"
 -                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
--                           data-new-gr-c-s-check-loaded="14.1267.0"
--                           data-gr-ext-installed=""
                           >
+                            <noscript>
                             ...
                               <script>
                               <Navigation>
@@ -511,7 +505,6 @@ It can also happen if the client has a browser extension installed which messes 
                               ...
                   ...
 
-[00:00:11.328] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:11.328] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:11.329] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767271507198}
-[00:00:55.709] Server  LOG      ✓ Compiled in 154ms
+[00:04:16.965] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:04:16.965] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:04:16.965] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767272639083}

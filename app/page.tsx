@@ -595,9 +595,9 @@ export default function HomePage() {
             <Button size="lg" asChild>
               <Link href="/contact">Get In Touch</Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
+            {/* <Button size="lg" variant="outline" asChild>
               <Link href="/blog">Read My Blog</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
