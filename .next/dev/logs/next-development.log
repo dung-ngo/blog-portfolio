@@ -1,0 +1,1391 @@
+[00:00:03.235] Server  LOG      ✓ Ready in 2.3s
+[00:00:08.692] Server  LOG      ○ Compiling / ...
+[00:00:18.955] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <li> li 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <HomePage>
+                  <main className="min-h-screen">
+                    <section>
+                    <section>
+                    <section>
+                    <section className="py-20 px-6" id="experience">
+                      <div className="max-w-4xl ...">
+                        <h2>
+                        <div className="space-y-8">
+                          <div>
+                          <div>
+                          <div>
+                          <div>
+                          <Card>
+                            <div data-slot="card" className="bg-card te...">
+                              <CardContent>
+                                <div data-slot="card-content" className="px-6 pt-6">
+                                  <div>
+                                  <ul className="list-disc ...">
+                                    <li>
+>                                   <li>
+>                                     <li>
+                                      ...
+                                    ...
+                    ...
+              ...
+            ...
+
+[00:00:18.955] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_842b7501-cd63-427e-ae42-7092df5d2137__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+-                           cz-shortcut-listen="true"
+                          >
+                            ...
+                              <Navigation>
+                                <header className="sticky top...">
+                                  <nav className="container ...">
+                                    <LinkComponent>
+                                    <div
+                                      className="hidden md:flex items-center gap-6"
+-                                     bis_skin_checked="1"
+                                    >
+                                    <div
+                                      className="md:hidden flex items-center gap-2"
+-                                     bis_skin_checked="1"
+                                    >
+                                  <div
+                                    className="md:hidden border-b bg-background overflow-hidden transition-all max-h-0"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="container px-6 py-4 space-y-3"
+-                                     bis_skin_checked="1"
+                                    >
+                              ...
+                                <SegmentViewNode type="page" pagePath="page.tsx">
+                                  <SegmentTrieNode>
+                                  <HomePage>
+                                    <main className="min-h-screen">
+                                      <section className="relative m...">
+                                        <div
+                                          className="max-w-4xl mx-auto text-center space-y-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="inline-block"
+-                                           bis_skin_checked="1"
+                                          >
+                                          <h1>
+                                          <p>
+                                          <div
+                                            className="flex flex-wrap gap-4 justify-center pt-4"
+-                                           bis_skin_checked="1"
+                                          >
+                                      <section className="py-20 px-6" id="about">
+                                        <div
+                                          className="max-w-4xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="prose prose-neutral dark:prose-invert max-w-none"
+-                                           bis_skin_checked="1"
+                                          >
+                                      <section className="py-20 px-6..." id="skills">
+                                        <div
+                                          className="max-w-6xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <h3>
+                                                    <div
+                                                      className="flex flex-wrap gap-2"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <h3>
+                                                    <div
+                                                      className="flex flex-wrap gap-2"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <h3>
+                                                    <div
+                                                      className="flex flex-wrap gap-2"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                      <section className="py-20 px-6" id="experience">
+                                        <div
+                                          className="max-w-4xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="space-y-8"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                      ...
+                              ...
+                  ...
+
+[00:00:19.070] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:19.070] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:19.070] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:19.070] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767249817538}
+[00:00:19.070] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767249817539}
+[00:03:26.587] Server  LOG      ✓ Compiled in 126ms
+[00:04:25.837] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767250064298}
+[00:04:46.544] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767250085015}
+[02:25:45.199] Server  LOG      ✓ Compiled in 113ms
+[02:27:36.372] Server  LOG      ✓ Compiled in 106ms
+[02:27:37.672] Server  LOG      ✓ Compiled in 305ms
+[02:30:15.755] Server  LOG      ✓ Compiled in 180ms
+[02:30:28.879] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true w-full w-full true w-full
+[02:30:28.879] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true h-full h-full true h-full
+[02:30:58.420] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true object-cover object-cover true object-cover
+[02:34:11.180] Server  ERROR   Received `true` for a non-boolean attribute `h-full`.
+
+If you want to write it to the DOM, pass a string instead: h-full="true" or h-full={value.toString()}.
+[02:34:11.181] Server  ERROR   Received `true` for a non-boolean attribute `w-full`.
+
+If you want to write it to the DOM, pass a string instead: w-full="true" or w-full={value.toString()}.
+[02:34:11.181] Server  ERROR   Received `true` for a non-boolean attribute `object-cover`.
+
+If you want to write it to the DOM, pass a string instead: object-cover="true" or object-cover={value.toString()}.
+[02:34:14.441] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <li> li 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <HomePage>
+                  <main className="min-h-screen">
+                    <section>
+                    <section>
+                    <section>
+                    <section className="py-20 px-6" id="experience">
+                      <div className="max-w-4xl ...">
+                        <h2>
+                        <div className="space-y-8">
+                          <div>
+                          <div>
+                          <div>
+                          <div>
+                          <Card>
+                            <div data-slot="card" className="bg-card te...">
+                              <CardContent>
+                                <div data-slot="card-content" className="px-6 pt-6">
+                                  <div>
+                                  <ul className="list-disc ...">
+                                    <li>
+>                                   <li>
+>                                     <li>
+                                      ...
+                                    ...
+                    ...
+              ...
+            ...
+
+[02:34:14.441] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true h-full h-full true h-full
+[02:34:14.441] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true w-full w-full true w-full
+[02:34:14.441] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true object-cover object-cover true object-cover
+[02:34:14.441] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased"
+-                           cz-shortcut-listen="true"
+-                           __processed_eb4aad88-56c1-4484-bcf5-256a2abe8e68__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                            ...
+                              <Navigation>
+                                <header className="sticky top...">
+                                  <nav className="container ...">
+                                    <LinkComponent>
+                                    <div
+                                      className="hidden md:flex items-center gap-6"
+-                                     bis_skin_checked="1"
+                                    >
+                                    <div
+                                      className="md:hidden flex items-center gap-2"
+-                                     bis_skin_checked="1"
+                                    >
+                                  <div
+                                    className="md:hidden border-b bg-background overflow-hidden transition-all max-h-0"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="container px-6 py-4 space-y-3"
+-                                     bis_skin_checked="1"
+                                    >
+                              ...
+                                <SegmentViewNode type="page" pagePath="page.tsx">
+                                  <SegmentTrieNode>
+                                  <HomePage>
+                                    <main className="min-h-screen">
+                                      <section className="relative m...">
+                                        <div
+                                          className="max-w-4xl mx-auto text-center space-y-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="inline-block"
+-                                           bis_skin_checked="1"
+                                          >
+                                          <h1>
+                                          <p>
+                                          <div
+                                            className="flex flex-wrap gap-4 justify-center pt-4"
+-                                           bis_skin_checked="1"
+                                          >
+                                      <section className="py-20 px-6" id="about">
+                                        <div
+                                          className="max-w-4xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="prose prose-neutral dark:prose-invert max-w-none"
+-                                           bis_skin_checked="1"
+                                          >
+                                      <section className="py-20 px-6..." id="skills">
+                                        <div
+                                          className="max-w-6xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <h3>
+                                                    <div
+                                                      className="flex flex-wrap gap-2"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <h3>
+                                                    <div
+                                                      className="flex flex-wrap gap-2"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <h3>
+                                                    <div
+                                                      className="flex flex-wrap gap-2"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                      <section className="py-20 px-6" id="experience">
+                                        <div
+                                          className="max-w-4xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="space-y-8"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                      ...
+                              ...
+                  ...
+
+[02:34:14.547] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:34:14.547] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[02:34:14.547] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[02:34:14.547] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767259053013}
+[02:34:14.547] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767259053014}
+[02:35:32.826] Server  LOG      ✓ Compiled in 445ms
+[02:36:40.385] Server  LOG      ✓ Compiled in 139ms
+[02:37:29.595] Server  LOG      ✓ Compiled in 201ms
+[02:44:46.781] Server  LOG      ✓ Compiled in 164ms
+[03:18:36.988] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767261715458}
+[03:24:20.459] Server  LOG      ✓ Compiled in 308ms
+[03:25:42.809] Server  LOG      ✓ Compiled in 171ms
+[03:25:55.737] Server  LOG      ✓ Compiled in 102ms
+[03:31:15.335] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767262473802}
+[03:49:24.012] Server  LOG      ✓ Compiled in 422ms
+[03:49:35.576] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <li> li 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <HomePage>
+                  <main className="min-h-screen">
+                    <section>
+                    <section>
+                    <section>
+                    <section className="py-20 px-6" id="experience">
+                      <div className="max-w-4xl ...">
+                        <h2>
+                        <div className="space-y-8">
+                          <div>
+                          <div>
+                          <div>
+                          <div>
+                          <Card>
+                            <div data-slot="card" className="bg-card te...">
+                              <CardContent>
+                                <div data-slot="card-content" className="px-6 pt-6">
+                                  <div>
+                                  <ul className="list-disc ...">
+                                    <li>
+>                                   <li>
+>                                     <li>
+                                      ...
+                                    ...
+                    ...
+              ...
+            ...
+
+[03:49:35.576] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_68e93d2d-1c58-4f6e-a452-70743ffc5df6__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                            ...
+                              <Navigation>
+                                <header className="sticky top...">
+                                  <nav className="container ...">
+                                    <LinkComponent>
+                                    <div
+                                      className="hidden md:flex items-center gap-6"
+-                                     bis_skin_checked="1"
+                                    >
+                                    <div
+                                      className="md:hidden flex items-center gap-2"
+-                                     bis_skin_checked="1"
+                                    >
+                                  <div
+                                    className="md:hidden border-b bg-background overflow-hidden transition-all max-h-0"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="container px-6 py-4 space-y-3"
+-                                     bis_skin_checked="1"
+                                    >
+                              ...
+                                <SegmentViewNode type="page" pagePath="page.tsx">
+                                  <SegmentTrieNode>
+                                  <HomePage>
+                                    <main className="min-h-screen">
+                                      <section className="relative m...">
+                                        <div
+                                          className="max-w-4xl mx-auto text-center space-y-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="inline-block"
+-                                           bis_skin_checked="1"
+                                          >
+                                          <h1>
+                                          <p>
+                                          <div
+                                            className="flex flex-wrap gap-4 justify-center pt-4"
+-                                           bis_skin_checked="1"
+                                          >
+                                      <section className="py-20 px-6" id="about">
+                                        <div
+                                          className="max-w-4xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="prose prose-neutral dark:prose-invert max-w-none"
+-                                           bis_skin_checked="1"
+                                          >
+                                      <section className="py-20 px-6..." id="skills">
+                                        <div
+                                          className="max-w-6xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <h3>
+                                                    <div
+                                                      className="flex flex-wrap gap-2"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <h3>
+                                                    <div
+                                                      className="flex flex-wrap gap-2"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <h3>
+                                                    <div
+                                                      className="flex flex-wrap gap-2"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                      <section className="py-20 px-6" id="experience">
+                                        <div
+                                          className="max-w-4xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="space-y-8"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                      ...
+                              ...
+                  ...
+
+[03:49:35.697] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:49:35.697] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:49:35.697] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:49:35.697] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767263574167}
+[03:49:35.697] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767263574167}
+[03:55:27.127] Server  LOG      ✓ Compiled in 109ms
+[03:55:58.107] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <li> li 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <HomePage>
+                  <main className="min-h-screen">
+                    <section>
+                    <section>
+                    <section>
+                    <section className="py-20 px-6" id="experience">
+                      <div className="max-w-4xl ...">
+                        <h2>
+                        <div className="space-y-8">
+                          <div>
+                          <div>
+                          <div>
+                          <div>
+                          <Card>
+                            <div data-slot="card" className="bg-card te...">
+                              <CardContent>
+                                <div data-slot="card-content" className="px-6 pt-6">
+                                  <div>
+                                  <ul className="list-disc ...">
+                                    <li>
+>                                   <li>
+>                                     <li>
+                                      ...
+                                    ...
+                    ...
+              ...
+            ...
+
+[03:55:58.107] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_048e764f-6c27-4911-86e3-a6844a164c36__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                            ...
+                              <Navigation>
+                                <header className="sticky top...">
+                                  <nav className="container ...">
+                                    <LinkComponent>
+                                    <div
+                                      className="hidden md:flex items-center gap-6"
+-                                     bis_skin_checked="1"
+                                    >
+                                    <div
+                                      className="md:hidden flex items-center gap-2"
+-                                     bis_skin_checked="1"
+                                    >
+                                  <div
+                                    className="md:hidden border-b bg-background overflow-hidden transition-all max-h-0"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="container px-6 py-4 space-y-3"
+-                                     bis_skin_checked="1"
+                                    >
+                              ...
+                                <SegmentViewNode type="page" pagePath="page.tsx">
+                                  <SegmentTrieNode>
+                                  <HomePage>
+                                    <main className="min-h-screen">
+                                      <section className="relative m...">
+                                        <div
+                                          className="max-w-4xl mx-auto text-center space-y-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="inline-block"
+-                                           bis_skin_checked="1"
+                                          >
+                                          <h1>
+                                          <p>
+                                          <div
+                                            className="flex flex-wrap gap-4 justify-center pt-4"
+-                                           bis_skin_checked="1"
+                                          >
+                                      <section className="py-20 px-6" id="about">
+                                        <div
+                                          className="max-w-4xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="prose prose-neutral dark:prose-invert max-w-none"
+-                                           bis_skin_checked="1"
+                                          >
+                                      <section className="py-20 px-6..." id="skills">
+                                        <div
+                                          className="max-w-6xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <h3>
+                                                    <div
+                                                      className="flex flex-wrap gap-2"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <h3>
+                                                    <div
+                                                      className="flex flex-wrap gap-2"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <h3>
+                                                    <div
+                                                      className="flex flex-wrap gap-2"
+-                                                     bis_skin_checked="1"
+                                                    >
+                                      <section className="py-20 px-6" id="experience">
+                                        <div
+                                          className="max-w-4xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="space-y-8"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                            <Card>
+                                              <div
+                                                data-slot="card"
+                                                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <CardContent>
+                                                  <div
+                                                    data-slot="card-content"
+                                                    className="px-6 pt-6"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <div
+                                                      className="flex flex-col md:flex-row md:items-start md:justify-b..."
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      <div
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                      ...
+                                                    ...
+                                      ...
+                              ...
+                  ...
+
+[03:55:59.010] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:55:59.010] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:55:59.010] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:55:59.010] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767263956752}
+[03:55:59.010] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767263956754}
+[03:56:24.932] Server  LOG      ✓ Compiled in 382ms
+[03:56:34.887] Server  LOG      ✓ Compiled in 516ms
+[03:57:55.337] Server  LOG      ✓ Compiled in 339ms
+[03:58:28.278] Server  LOG      ✓ Compiled in 122ms
+[03:58:40.272] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767264118737}
+[03:58:44.488] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#about color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#about","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767264122956}
+[04:02:58.483] Browser ERROR   ./app/page.tsx:569:23
+Parsing ecmascript source code failed
+  567 |                 </div>
+  568 |               </CardContent>
+> 569 |             </Card>-0">
+      |                       ^
+  570 |               <div className="aspect-video bg-gradient-to-br from-orange-500 to-pink-600 relative overflow-hidden">
+  571 |                 {/* <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" /> */}
+  572 |                 <img
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[04:03:23.318] Server  LOG      ✓ Compiled in 169ms
+[04:04:03.725] Server  LOG      ✓ Compiled in 247ms
+[04:04:15.153] Server  LOG      ✓ Compiled in 542ms
+[04:04:22.615] Server  LOG      ✓ Compiled in 183ms
+[04:05:15.107] Server  LOG      ✓ Compiled in 111ms
+[04:05:20.399] Server  LOG      ✓ Compiled in 664ms
+[04:06:24.474] Server  LOG      ✓ Compiled in 212ms
+[04:08:56.512] Server  LOG      ✓ Compiled in 233ms
+[04:10:23.962] Server  LOG      ✓ Compiled in 220ms
+[04:12:09.402] Server  LOG      ✓ Compiled in 260ms
+[04:16:16.009] Browser ERROR   ./app/page.tsx:383:24
+Parsing ecmascript source code failed
+  381 | <li>Ensured compliance with safety and organizational guidelines</li>
+  382 |
+> 383 |                   </li>
+      |                        ^
+> 384 |                 </ul>
+      | ^^^^^^^^^^^^^^^^^
+  385 |               </CardContent>
+  386 |             </Card>
+  387 |
+
+Expected '</', got 'jsx text (
+                )'
+[04:16:17.006] Browser ERROR   ./app/page.tsx:383:24
+Parsing ecmascript source code failed
+  381 | <li>Ensured compliance with safety and organizational guidelines</li>
+  382 |
+> 383 |                   </li>
+      |                        ^
+> 384 |                 </ul>
+      | ^^^^^^^^^^^^^^^^^
+  385 |               </CardContent>
+  386 |             </Card>
+  387 |
+
+Expected '</', got 'jsx text (
+                )'
+[04:16:21.436] Server  LOG      ✓ Compiled in 160ms
+[05:12:57.595] Server  LOG      ✓ Compiled in 250ms
+[05:13:21.078] Server  LOG      ✓ Compiled in 154ms
+[05:13:34.580] Server  LOG      ✓ Compiled in 140ms
+[05:14:35.867] Server  LOG      ✓ Compiled in 124ms
+[05:14:51.202] Browser ERROR   ./app/page.tsx:480:20
+Parsing ecmascript source code failed
+  478 |                 </ul>
+  479 |               </CardContent>
+> 480 |             </Card>
+      |                    ^
+> 481 |                           <CardContent className="pt-6">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  482 |                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-3">
+  483 |                   <div>
+  484 |                     <h3 className="text-xl font-semibold">Volunteer</h3>
+
+Expected '</', got 'jsx text (
+                          )'
+[05:15:06.687] Server  LOG      ✓ Compiled in 219ms
+[05:18:51.167] Server  LOG      ✓ Compiled in 216ms
+[05:28:03.126] Server  LOG      ✓ Compiled in 152ms
+[05:28:55.955] Server  LOG      ✓ Compiled in 246ms
+[05:29:14.808] Server  LOG      ✓ Compiled in 162ms
+[05:31:20.375] Server  LOG      ✓ Compiled in 141ms
+[05:32:31.350] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767269749813}
+[05:32:36.117] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#projects color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#projects","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767269754576}

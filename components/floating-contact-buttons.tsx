@@ -1,33 +1,33 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Mail, MessageSquare, Phone, X } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Mail, MessageSquare, Phone, X } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export function FloatingContactButtons() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const contacts = [
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:your.email@example.com",
+      href: "mailto:dungngo.nntd@gmail.com",
       color: "hover:bg-blue-500",
     },
     {
       icon: MessageSquare,
       label: "WhatsApp",
-      href: "https://wa.me/1234567890",
+      href: "https://wa.me/601123517047",
       color: "hover:bg-green-500",
     },
-    {
-      icon: Phone,
-      label: "Zalo",
-      href: "https://zalo.me/1234567890",
-      color: "hover:bg-blue-600",
-    },
-  ]
+    // {
+    //   icon: Phone,
+    //   label: "Zalo",
+    //   href: "https://zalo.me/84938010694",
+    //   color: "hover:bg-blue-600",
+    // },
+  ];
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col-reverse gap-3">
@@ -35,17 +35,25 @@ export function FloatingContactButtons() {
       <div
         className={cn(
           "flex flex-col-reverse gap-3 transition-all duration-300 origin-bottom",
-          isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0",
+          isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
         )}
       >
         {contacts.map((contact) => (
           <Button
             key={contact.label}
             size="icon"
-            className={cn("h-12 w-12 rounded-full shadow-lg transition-colors", contact.color)}
+            className={cn(
+              "h-12 w-12 rounded-full shadow-lg transition-colors",
+              contact.color
+            )}
             asChild
           >
-            <a href={contact.href} target="_blank" rel="noopener noreferrer" aria-label={contact.label}>
+            <a
+              href={contact.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={contact.label}
+            >
               <contact.icon className="h-5 w-5" />
             </a>
           </Button>
@@ -59,8 +67,12 @@ export function FloatingContactButtons() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? "Close contact menu" : "Open contact menu"}
       >
-        {isOpen ? <X className="h-6 w-6" /> : <MessageSquare className="h-6 w-6" />}
+        {isOpen ? (
+          <X className="h-6 w-6" />
+        ) : (
+          <MessageSquare className="h-6 w-6" />
+        )}
       </Button>
     </div>
-  )
+  );
 }
