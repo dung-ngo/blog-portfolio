@@ -396,7 +396,7 @@ const metadata = {
                 type: "image/svg+xml"
             }
         ],
-        apple: "/apple-icon.png"
+        apple: "/poke-ball.png"
     }
 };
 function RootLayout({ children }) {

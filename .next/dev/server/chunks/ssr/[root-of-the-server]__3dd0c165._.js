@@ -194,17 +194,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$theme$2d$provi
 ;
 ;
 const metadata = {
-    title: "Portfolio | Frontend Developer",
-    description: "A creative minimalist portfolio showcasing frontend development projects, blog posts, and expertise in React, Next.js, and TypeScript.",
-    generator: "v0.app",
+    title: "June Ngo | Frontend Developer",
+    description: "June's portfolio showcasing projects, skills, and contact information as a Frontend Developer.",
+    generator: "June",
     icons: {
         icon: [
             {
-                url: "/icon-light-32x32.png",
+                url: "/poke-ball.png",
                 media: "(prefers-color-scheme: light)"
             },
             {
-                url: "/icon-dark-32x32.png",
+                url: "/poke-ball.png",
                 media: "(prefers-color-scheme: dark)"
             },
             {
@@ -212,7 +212,7 @@ const metadata = {
                 type: "image/svg+xml"
             }
         ],
-        apple: "/apple-icon.png"
+        apple: "/poke-ball.png"
     }
 };
 function RootLayout({ children }) {
@@ -229,18 +229,18 @@ function RootLayout({ children }) {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$navigation$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Navigation"], {}, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 46,
+                        lineNumber: 51,
                         columnNumber: 11
                     }, this),
                     children,
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 48,
+                        lineNumber: 53,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$analytics$2f$dist$2f$next$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Analytics"], {}, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 49,
+                        lineNumber: 54,
                         columnNumber: 11
                     }, this)
                 ]

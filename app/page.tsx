@@ -318,27 +318,29 @@ export default function HomePage() {
                   <li>
                     Architected scalable front-end structures that supported
                     evolving user interface concepts and improved long-term
-                    maintainability.
-                    <li>
-                      Collaborated closely with cross-functional teams—including
-                      designers, back-end developers, and product managers—to
-                      translate complex requirements into functional,
-                      user-friendly interfaces
-                    </li>
-                    <li>
-                      Designed and developed custom reusable components tailored
-                      to project needs, which significantly reduced development
-                      time and improved code consistency across applications
-                    </li>
-                    <li>
-                      Continuously monitored front-end performance, identified
-                      UI bottlenecks, and implemented optimization strategies
-                      that enhanced loading speed and user engagement
-                    </li>
-                    <li>
-                      Oversaw CI/CD workflows to ensure smooth deployments and
-                      minimal downtime during releases
-                    </li>
+                    maintainability
+                  </li>
+                  <li>
+                    Collaborated closely with cross-functional teams—including
+                    designers, back-end developers, and product managers—to
+                    translate complex requirements into functional,
+                    user-friendly interfaces
+                  </li>
+                  <li>
+                    Designed and developed custom reusable components tailored
+                    to project needs, which significantly reduced development
+                    time and improved code consistency across applications
+                  </li>
+                  <li>
+                    Continuously monitored front-end performance, identified UI
+                    bottlenecks, and implemented optimization strategies that
+                    enhanced loading speed and user engagement
+                  </li>
+                  <li>
+                    Oversaw CI/CD workflows to ensure smooth deployments and
+                    minimal downtime during releases
+                  </li>
+                  <li>
                     Managed and updated project dependencies, proactively
                     resolving compatibility issues to maintain a reliable and
                     efficient development environment
